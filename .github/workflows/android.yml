@@ -31,5 +31,5 @@ jobs:
       - name: Archive Apps
         uses: actions/upload-artifact@v2
         with:
-          name: Android WebdriverIO Native Demo App Release
+          name: Android-NativeDemoApp-x.x.x.apk
           path: '**/app/build/outputs/apk/release/**/*.apk'
