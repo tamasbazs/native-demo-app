@@ -6851,6 +6851,11 @@ react-native-picker-select@^8.0.4:
     "@react-native-picker/picker" "^1.8.3"
     lodash.isequal "^4.5.0"
 
+react-native-pinch-to-zoom-view@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-pinch-to-zoom-view/-/react-native-pinch-to-zoom-view-1.0.1.tgz#7c24df74ed6ef6419b1f5694ce406143d1f8346b"
+  integrity sha512-XQXg1bQ6On9+1e5ZR5xgMej5keNBQ+mlHtCZULlIjQRKXXkhd/UUvuvtDrh9i8kSjEQnxuGYswmevd/VF7zF6w==
+
 react-native-ratings@^7.3.0:
   version "7.6.1"
   resolved "https://registry.yarnpkg.com/react-native-ratings/-/react-native-ratings-7.6.1.tgz#b3d8a99a0c12fd6874f7e3c0e492089543d837c8"

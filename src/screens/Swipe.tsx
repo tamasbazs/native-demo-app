@@ -13,6 +13,8 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+// @ts-ignore
+import { PinchZoomView } from 'react-native-pinch-to-zoom-view';
 import {STATUS_BAR_HEIGHT} from '../components/StatusBar';
 import TitleDivider from '../components/TitleDivider';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
@@ -74,7 +76,6 @@ const SwipeScreen = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const [activeSlide, setActiveSlide] = useState(0);
   const sliderEl = useRef(null);
-
   const Item: React.FC<{item: SliderEntries}> = ({item}) => {
     return <SliderEntry {...item} />;
   };
@@ -124,17 +125,19 @@ const SwipeScreen = () => {
         </View>
       </View>
       <View style={styles.logoContainer}>
+        <PinchZoomView>
         <Image
           style={styles.logo}
-          source={require('../assets/webdriverio.png')}
-          {...testProperties('WebdriverIO logo')}
-        />
+            source={require('../assets/webdriverio.png')}
+            {...testProperties('WebdriverIO logo')}
+          />
+        </PinchZoomView>
         <Text
           style={[
             styles.logoText,
             {color: isDarkMode ? Colors.white : Colors.black},
           ]}>
-          You found me!!!
+          You found me, try to pinch or zoom me.
         </Text>
       </View>
     </ScrollView>
